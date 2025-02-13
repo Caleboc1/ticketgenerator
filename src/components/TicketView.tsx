@@ -1,5 +1,6 @@
 
 import { Download } from "lucide-react";
+import barcode from '/barcode.png';
 
 interface TicketViewProps {
   ticketData: {
@@ -61,8 +62,8 @@ const TicketView = ({ ticketData, onBookAnother }: TicketViewProps) => {
           <div className="border-t border-dashed border-gray-600 pt-4">
             <div className="text-center">
               <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARQAAAAyCAYAAAC2MdSdAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABYSURBVHgB7dYxDQAgEMDAB/vvGQX4YAkyJ1nB3L33ByCgzgEhggIkCAoQIihAgqAACYICJAgKkCAoQIKgAAmCAiQICpAgKECCoAAJggIkCAqQIChAgqAACR9ZagTwu1C5IwAAAABJRU5ErkJggg=="
-                alt="Barcode"
+               src={barcode}
+               alt="Barcode"
                 className="max-w-full h-auto mx-auto"
               />
               <p className="text-xs text-gray-400 mt-2">1 234567 891026</p>
